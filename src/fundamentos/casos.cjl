@@ -1,0 +1,12 @@
+(import '(java.util Scanner))
+(def entrada (Scanner. *in*))
+
+(println "Introduce un número del 1 al 3:")
+(def numero (.nextLine entrada))
+
+;;Ahora crearemos nuestro 'switch'.
+(case numero
+  "1" (println "Introduciste el numero 1")
+  "2" (println "Introduciste el numero 2")
+  "3" (println "Introduciste el numero 3")
+)
