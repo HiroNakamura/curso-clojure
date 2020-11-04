@@ -6,7 +6,7 @@
 
 
 **hola_mundo.cjl**
-```java
+```
 (def saludo "Hola, mundo!!")
 (println saludo)
 ```
