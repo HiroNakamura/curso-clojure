@@ -15,7 +15,30 @@
   (/ x y)
 )
 
+
+;;defino las funciones
+(defn obtenerImc [p,t]
+  (/ p (* t t)))
+
+
+(defn obtenerPeso [t,i]
+  (* i (* t t)))
+
+(defn obtenerTalla [p,i]
+  (Math/sqrt (/ p i)))
+
+;;defino dos variables: peso e imc
+(def peso 74.8)
+(def imc 18.0)
+
 (println "Suma de 4 + 6 = "(sumar 4 6))
 (println "Resta de 10 + 3 = "(restar 4 6))
 (println "Multiplicacion de 4 * 6 = "(multiplicar 4 6))
 (println "Division de 25 / 5 = "(dividir 25 5))
+
+;; usando try-catch
+(try
+  (println "talla ideal:" (obtenerTalla peso imc))
+ (catch Exception e (str "error: " (.getMessage e)))
+)
+

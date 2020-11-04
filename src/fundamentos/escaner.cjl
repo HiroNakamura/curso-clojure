@@ -1,0 +1,28 @@
+;;Importamos la librería java.util.Scanner
+(import '(java.util Scanner))
+(def scan (Scanner. *in*))
+
+
+
+;;
+(println "Tu nombre: ")
+(def nombre (.nextLine scan))
+;;solicitamos distancia y tiempo, usamos .nextFloat
+(println "Introduce distancia: ")
+(def distancia (.nextFloat scan))
+(println "Introduce tiempo: ")
+(def tiempo (.nextFloat scan))
+
+(println "=========================================================")
+;;visualizamos  datos
+(println "Distancia leida: "distancia)
+(println "Tiempo leido: "tiempo)
+
+;;calculamos la velocidad
+(println "Velocidad obtenida: "(/ distancia tiempo))
+
+(println "=========================================================")
+;;
+
+(def resultado(if (="Ernesto" nombre) "Eres Ernesto" "No eres Ernesto"))
+(println resultado)

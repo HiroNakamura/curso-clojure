@@ -1,0 +1,24 @@
+(import '(javax.swing JOptionPane));'
+
+
+;;defino el método introduceDato
+(defn introduceDato []
+    (JOptionPane/showInputDialog
+         (str "Introduce una cadena:")
+     )
+)
+
+;;Introducimos dato
+(def entrada (introduceDato))
+;;imprimimos
+(JOptionPane/showMessageDialog nil,
+   (str "Cadena: "entrada)
+)
+
+;; Obtenemos el nombre del SO
+(def sistema(. (. System (getProperties)) (get "os.name")))
+
+    (JOptionPane/showMessageDialog nil,
+       (str "Estas usando "sistema)
+)
+
