@@ -1,0 +1,21 @@
+;; Funciones
+(defn sumar[x, y]
+  (+ x y)
+)
+
+(defn restar[x, y]
+  (- x y)
+)
+
+(defn multiplicar[x, y]
+  (* x y)
+)
+
+(defn dividir[x, y]
+  (/ x y)
+)
+
+(println "Suma de 4 + 6 = "(sumar 4 6))
+(println "Resta de 10 + 3 = "(restar 4 6))
+(println "Multiplicacion de 4 * 6 = "(multiplicar 4 6))
+(println "Division de 25 / 5 = "(dividir 25 5))

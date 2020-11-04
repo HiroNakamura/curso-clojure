@@ -3,6 +3,8 @@
 (def b 2)
 (def real 45.3)
 (def str "Clojure")
+(def verdadero true)
+(def falso false)
 (def vector [1 2 3 4 5 6 7 8])
 (def cadena ["C" "l" "o" "j" "u" "r" "e"])
 ;;;
@@ -13,3 +15,17 @@
 (println "str: "str)
 (println "vector: "vector)
 (println "cadena: "cadena)
+(println "verdadero: "verdadero)
+(println "falso: "falso)
+;;;
+(if (= verdadero true)
+    (println "Europa renacida")
+)
+
+(if (= falso true)
+    (println "Esto nunca se vera")
+)
+
+(if (> 6 2) 
+   (println "True")
+)
