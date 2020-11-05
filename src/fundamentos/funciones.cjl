@@ -15,6 +15,13 @@
   (/ x y)
 )
 
+(defn factorial [n]
+  (if (= n 1)
+     n
+     (* n (factorial(dec n)))
+  )
+)
+
 
 ;;defino las funciones
 (defn obtenerImc [p,t]
@@ -27,6 +34,9 @@
 (defn obtenerTalla [p,i]
   (Math/sqrt (/ p i)))
 
+
+;;
+(println "***** Funciones en Clojure *****")
 ;;defino dos variables: peso e imc
 (def peso 74.8)
 (def imc 18.0)
@@ -39,6 +49,9 @@
 ;; usando try-catch
 (try
   (println "talla ideal:" (obtenerTalla peso imc))
+  (println "Factorial de 4: "(factorial 4))
+  (println "Factorial de 5: "(factorial 5))
  (catch Exception e (str "error: " (.getMessage e)))
 )
+
 

@@ -1,0 +1,37 @@
+(comment
+   Estructuras selectivas en Clojure
+)
+
+(def x 4)
+(def y 3)
+
+;; IF(x > y) --> TRUE
+(if (> x y)
+  (println "x:"x" es mayor a y:"y)
+)
+
+
+;; if(x==x) --> TRUE
+(if (= x x)
+  (println "Son exactamente iguales")
+)
+
+;; if(x == y || x > y) --> TRUE
+(if (or (= x y) (> x y))
+  (println "A")
+)
+
+;; if(x == y && x > y) --> FALSE
+(if (and (= x y) (> x y))
+  (println "-Esto no se vera")
+)
+
+;; if(!(x==y))--> TRUE
+(println (not (= x y)))
+
+;; if(!(x == y)) --> TRUE
+(if (not (= x y))
+  (println "-Esto si se vera")
+)
+
+
