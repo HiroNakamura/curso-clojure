@@ -29,3 +29,10 @@
 (if (> 6 2) 
    (println "True")
 )
+
+(def moneda ["AGUILA" "SOL"])
+(println "Elemento indice 0:"(moneda 0))
+(println "Elemento indice 1:"(moneda 1))
+(println "Obtenemos aleatoriamente:"(moneda (rand-int 2)))
+(def aleatorio (moneda (rand-int 2)))
+(println "Obtenemos aleatoriamente:"aleatorio)
