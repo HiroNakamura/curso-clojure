@@ -35,23 +35,40 @@
   (Math/sqrt (/ p i)))
 
 
+(defn getAleatorio [vector]
+  (vector (rand-int (count vector)))
+)
+
 ;;
 (println "***** Funciones en Clojure *****")
 ;;defino dos variables: peso e imc
 (def peso 74.8)
 (def imc 18.0)
-
+(def arreglo ["A" "B" "C" "D"])
+(def mapa {"x" 1 "y" 2 "z" 3})
+;;
 (println "Suma de 4 + 6 = "(sumar 4 6))
 (println "Resta de 10 + 3 = "(restar 4 6))
 (println "Multiplicacion de 4 * 6 = "(multiplicar 4 6))
 (println "Division de 25 / 5 = "(dividir 25 5))
-
+(println "=====================================")
+;;
+(println "Vector:"arreglo)
+(println "Tam. arreglo:"(count arreglo))
+(println "Aleatorio:"(getAleatorio arreglo))
+(println "=====================================")
+;;
+(println "Mapa:"mapa)
+(println "Obteniendo valor de x:"(get mapa "x"))
+(println "Obteniendo valor de y:"(get mapa "y"))
+(println "Obteniendo valor de z:"(get mapa "z"))
+(println "=====================================")
 ;; usando try-catch
 (try
-  (println "talla ideal:" (obtenerTalla peso imc))
+  (println "Talla ideal:" (obtenerTalla peso imc))
+  (println "=====================================")
   (println "Factorial de 4: "(factorial 4))
   (println "Factorial de 5: "(factorial 5))
  (catch Exception e (str "error: " (.getMessage e)))
 )
-
-
+(println "=====================================")

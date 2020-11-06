@@ -36,3 +36,9 @@
 (println "Obtenemos aleatoriamente:"(moneda (rand-int 2)))
 (def aleatorio (moneda (rand-int 2)))
 (println "Obtenemos aleatoriamente:"aleatorio)
+
+;;
+(println "Cadena:"str)
+(println "Tam. de la cadena:"(count str))
+
+
