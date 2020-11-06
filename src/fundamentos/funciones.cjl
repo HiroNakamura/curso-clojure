@@ -41,12 +41,34 @@
 )
 
 ;;
+(defn calcular [ a b c d e f denominador]
+  (def x (/ (- (* c e) (* b f) ) denominador));;x
+  (def y (/ (- (* a f) (* c d) ) denominador));;y
+  (println "Solucion:\nx="x" , y="y)
+  )
+
+
+;;
 (println "***** Funciones en Clojure *****")
 ;;defino dos variables: peso e imc
 (def peso 74.8)
 (def imc 18.0)
 (def arreglo ["A" "B" "C" "D"])
 (def mapa {"x" 1 "y" 2 "z" 3})
+;;;
+(def a 2)
+(def b 5)
+(def c 12)
+(def d 47)
+(def e 30)
+(def f 71)
+(def denominador (- (* a e) (* b d)))
+(println "denomindador:"denominador)
+(if (= denominador 0) 
+  (println "Sin solucion!")
+  (calcular a b c d e f denominador)
+  );;fin if
+;;
 ;;
 (println "Suma de 4 + 6 = "(sumar 4 6))
 (println "Resta de 10 + 3 = "(restar 4 6))
