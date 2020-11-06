@@ -1,3 +1,5 @@
+(ns selectivas)
+
 (comment
    Estructuras selectivas en Clojure
 )
@@ -39,6 +41,6 @@
   "1" (println "X")
   "2" (println "Y")
   "3" (println "Z")
-  (str "else" numero(println "Esa opcion no esta dentro del rango"))
+  (str "else" opcion(println "Esa opcion no esta dentro del rango"))
 )
 ;;

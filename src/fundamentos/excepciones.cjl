@@ -1,0 +1,7 @@
+(ns excepciones)
+;;Division entre cero
+(println "Dividimos 3/0")
+(try
+  (println "Division entre cero:"(/ 3 0))
+ (catch Exception e (str "error: " (.getMessage e)))
+)

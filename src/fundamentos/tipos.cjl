@@ -1,19 +1,21 @@
+(ns tipos)
+
 ;;Tipos en Clojure
 (def a 1)
 (def b 2)
 (def real 45.3)
-(def str "Clojure")
+(def strCad "Clojure")
 (def verdadero true)
 (def falso false)
-(def vector [1 2 3 4 5 6 7 8])
+(def arreglo [1 2 3 4 5 6 7 8])
 (def cadena ["C" "l" "o" "j" "u" "r" "e"])
 ;;;
 (println "**** Tipos en Clojure ****")
 (println "a: "a)
 (println "b: "b)
 (println "real: "real)
-(println "str: "str)
-(println "vector: "vector)
+(println "strCad: "strCad)
+(println "arreglo: "arreglo)
 (println "cadena: "cadena)
 (println "verdadero: "verdadero)
 (println "falso: "falso)
@@ -38,7 +40,7 @@
 (println "Obtenemos aleatoriamente:"aleatorio)
 
 ;;
-(println "Cadena:"str)
-(println "Tam. de la cadena:"(count str))
+(println "Cadena:"strCad)
+(println "Tam. de la cadena:"(count strCad))
 
 

@@ -1,3 +1,4 @@
+(ns escaner)
 ;;Importamos la librería java.util.Scanner
 (import '(java.util Scanner))
 (def scan (Scanner. *in*))

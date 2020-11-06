@@ -1,3 +1,5 @@
+(ns casos)
+
 (import '(java.util Scanner))
 (def entrada (Scanner. *in*))
 

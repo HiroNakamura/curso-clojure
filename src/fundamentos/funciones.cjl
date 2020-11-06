@@ -1,3 +1,4 @@
+(ns funciones)
 ;; Funciones
 (defn sumar[x, y]
   (+ x y)

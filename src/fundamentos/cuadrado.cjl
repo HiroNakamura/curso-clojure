@@ -1,3 +1,5 @@
+(ns cuadrado)
+
 (import '(javax.swing JOptionPane));'
 (defn introduceDato [s]
   (JOptionPane/showInputDialog
