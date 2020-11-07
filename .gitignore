@@ -1,0 +1,6 @@
+# Ignorar esto
+.git
+*.jar
+# No ignorar esto
+!.gitignore
+
