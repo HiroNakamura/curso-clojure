@@ -50,3 +50,8 @@ $ cd my-stuff
 $ lein run
 ```
 
+
+Links:
+* [https://leiningen.org/](https://leiningen.org/)
+* [https://www.baeldung.com/leiningen-clojure](https://www.baeldung.com/leiningen-clojure)
+
