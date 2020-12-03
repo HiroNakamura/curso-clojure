@@ -27,3 +27,23 @@
 
 (def resultado(if (="Ernesto" nombre) "Eres Ernesto" "No eres Ernesto"))
 (println resultado)
+
+;;;
+(defn max [num1 num2]
+  (if (< num1 num2)
+    (println "Mayor:" num2)
+    (println "Mayor:" num1)))
+
+(let [scanner (Scanner. *in*)
+      _ (println "Numero 1: ")
+      num1 (.nextLine scanner)
+
+      _ (println "Numero 2: ")
+      num2 (.nextLine scanner)
+
+      parsed-num1 (Integer/parseInt num1) ; aquí
+      parsed-num2 (Integer/parseInt num2)] ; y aquí
+
+  (println "Tu numero1 =" parsed-num1  "y tu numero2 = " parsed-num2)
+  (max parsed-num1 parsed-num2))
+
