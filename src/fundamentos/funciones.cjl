@@ -23,6 +23,9 @@
   )
 )
 
+(defn valor_futuro [presente, tasa, periodo]
+  (+ presente (* presente (java.lang.Math/pow tasa periodo)))
+)
 
 ;;defino las funciones
 (defn obtenerImc [p,t]
@@ -95,3 +98,26 @@
  (catch Exception e (str "error: " (.getMessage e)))
 )
 (println "=====================================")
+(def presente 304.43)
+(def tasa (/ 24.0 100.0))
+(def periodo 2.0)
+(println "Valor presente: "presente)
+(println "Tasa: "tasa)
+(println "Periodo:" periodo)
+(println "Valor futuro: "(valor_futuro presente tasa periodo))
+;;
+(println "***********************************************")
+(def presente 120.33)
+(def tasa 0.16)
+(def periodo 4.0)
+(println "Valor presente: "presente)
+(println "Tasa: "tasa)
+(println "Periodo:" periodo)
+(try
+  (println "Valor futuro: "(valor_futuro presente tasa periodo))
+ (catch Exception e (str "Ha ocurrido una Exception: " (.getMessage e)))
+)
+
+
+
+
