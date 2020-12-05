@@ -16,11 +16,20 @@
   (/ x y)
 )
 
+(defn residuo3? [num]
+  (if (= (mod num 3) 0) "Divisible entre 3" "No es divisible entre 3")
+)
+
+
 (defn factorial [n]
   (if (= n 1)
      n
      (* n (factorial(dec n)))
   )
+)
+
+(defn esMayor5? [num]
+  (if (> num 5) true false)
 )
 
 (defn valor_futuro [presente, tasa, periodo]
@@ -117,6 +126,24 @@
   (println "Valor futuro: "(valor_futuro presente tasa periodo))
  (catch Exception e (str "Ha ocurrido una Exception: " (.getMessage e)))
 )
+;;
+(println "***********************************************")
+(def numero 4)
+(println "Verdadero?: "(esMayor5? numero));;false
+(def numero 6)
+(println "Verdadero?: "(esMayor5? numero));;true
+(def numero 0)
+(println "Verdadero?: "(not (esMayor5? numero)));;true
+(def numero 10)
+(println "Verdadero?: "(not (esMayor5? numero)));;false
+(println "***********************************************")
+(def numero 9)
+(println "El numero:"numero" "(residuo3? numero))
+(def numero 12)
+(println "El numero:"numero" "(residuo3? numero))
+(def numero 7)
+(println "El numero:"numero" "(residuo3? numero))
+
 
 
 
