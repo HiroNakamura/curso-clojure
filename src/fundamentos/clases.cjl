@@ -1,23 +1,36 @@
 (ns clases)
-;;Clases
 
-;;Mascota
+;;Clases
 (defrecord Mascota [nombre edad])
 (def my_mascota (Mascota. "Caramelo Dourmong" 2))
 (println "Mascota: "(:nombre my_mascota) " : "(:edad my_mascota))
 
 
 ;;Interface(s)
-(defprotocol Servicio
-  (verFecha[this]))
-
+(defprotocol IServicio
+  (mostrar[this]))
 
 
 ;;Clase(s) que implementa la interface
 (defrecord Fecha[dia mes anyo]
-   Servicio
-   (verFecha[this](println "Fecha: { dia:"dia" -mes: "mes" -anyo:"anyo"}")))
+   IServicio
+   (mostrar[this](println "Fecha: { dia:"dia" -mes: "mes" -anyo:"anyo"}")))
 
-;;Instanciamos objeto
-(def miFecha(Fecha.  "23" "agosto" "1943"))
-(verFecha miFecha)
+
+(defrecord X [nombre]
+   IServicio
+   (mostrar[this](println "X: {nombre:"nombre"}"))
+)
+
+(defrecord Puerta []
+  IServicio
+  (mostrar[this](println "Abrimos la puerta de la casa"))
+)
+
+;;Instanciamos objeto(s)
+(def fecha(Fecha.  "12" "Diciembre" "2020"))
+(mostrar fecha)
+(def my_x(X. "General Slaughter"))
+(mostrar my_x)
+(def puerta(Puerta.))
+(mostrar puerta)
