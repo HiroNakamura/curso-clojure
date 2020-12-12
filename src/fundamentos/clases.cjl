@@ -3,7 +3,21 @@
 
 ;;Mascota
 (defrecord Mascota [nombre edad])
-(def my_mascota (Mascota. "Firulais" 3))
+(def my_mascota (Mascota. "Caramelo Dourmong" 2))
 (println "Mascota: "(:nombre my_mascota) " : "(:edad my_mascota))
 
 
+;;Interface(s)
+(defprotocol Servicio
+  (verFecha[this]))
+
+
+
+;;Clase(s) que implementa la interface
+(defrecord Fecha[dia mes anyo]
+   Servicio
+   (verFecha[this](println "Fecha: { dia:"dia" -mes: "mes" -anyo:"anyo"}")))
+
+;;Instanciamos objeto
+(def miFecha(Fecha.  "23" "agosto" "1943"))
+(verFecha miFecha)
