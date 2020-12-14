@@ -12,3 +12,10 @@
   "2" (println "Introduciste el numero 2")
   "3" (println "Introduciste el numero 3")
 )
+;;
+(def opcion 1)
+(case opcion
+  1 (println "Es la opcion 1")
+  2 (println "Es la opcion 2")
+  3 (println "Es la opcion 3")
+)
