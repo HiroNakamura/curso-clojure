@@ -38,9 +38,36 @@
 (println "Obtenemos aleatoriamente:"(moneda (rand-int 2)))
 (def aleatorio (moneda (rand-int 2)))
 (println "Obtenemos aleatoriamente:"aleatorio)
+;;
+(def hugo (moneda (rand-int 2)))
+(def paco (moneda (rand-int 2)))
+(def luis (moneda (rand-int 2)))
+(def ganador "")
+(println "Hugo: "hugo)
+(println "Paco: "paco)
+(println "Luis: "luis)
+
+(if (and (not (= hugo paco)) (not (= hugo luis)))
+  (def ganador "El ganador es Hugo")
+)
+
+(if (and (not (= paco luis)) (not (= paco hugo)))
+  (def ganador "El ganador es Paco")
+)
+
+(if (and (= hugo luis)(= paco luis))
+  (def ganador "No hay ganador")
+)
+
+(if (and (not (= luis paco)) (not (= luis hugo)))
+  (def ganador "El ganador es Luis")
+)
+
+(println ganador)
 
 ;;
 (println "Cadena:"strCad)
 (println "Tam. de la cadena:"(count strCad))
-
+;;
+(println "Suma: "(+ 1 2 3 4 5 6 7 8 9))
 
