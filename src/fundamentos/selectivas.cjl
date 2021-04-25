@@ -44,3 +44,37 @@
   (str "else" opcion(println "Esa opcion no esta dentro del rango"))
 )
 ;;
+(if (= 3 3)
+  (println "Es verdadero")
+)
+(if (> 9 4)
+  (println "Esto es verdadero")
+)
+
+(if (< 11 10)
+  (println "X")
+  (println "Y");;Y
+)
+
+(if (not= 10 11)
+  (println "A");;A
+  (println "B")
+)
+
+(if (not= 11 11)
+   (println "O")
+   (println "P");;P 
+)
+;;;
+(def x 1)
+(def a 2)
+(def b 0)
+(cond
+  (= x a) (println "Alef")
+  (= x b) (println "Bet")
+  :else   (println "Salida"))
+;;;
+(println (or true true));;true
+(println (and true false));;false
+(println (not true));;false
+
