@@ -1,6 +1,11 @@
 (ns tipos)
 
-;;Tipos en Clojure
+(comment 
+   Tipos en Clojure:
+   Integer, String, Boolean, etc.
+
+   (def nombreVariable valor)
+)
 (def a 1)
 (def b 2)
 (def real 45.3)
@@ -39,6 +44,9 @@
 (def aleatorio (moneda (rand-int 2)))
 (println "Obtenemos aleatoriamente:"aleatorio)
 ;;
+(comment 
+  Juego del disparejo
+)
 (def hugo (moneda (rand-int 2)))
 (def paco (moneda (rand-int 2)))
 (def luis (moneda (rand-int 2)))
@@ -65,7 +73,7 @@
 
 (println ganador)
 
-;;
+;; Cadenas
 (println "Cadena:"strCad)
 (println "Tam. de la cadena:"(count strCad))
 ;;

@@ -50,12 +50,24 @@
 (if (> 9 4)
   (println "Esto es verdadero")
 )
+(comment
 
+  IF 11 < 10 THEN 
+    DISPLAY "X"
+  ELSE
+    DISPLAY "Y" 
+)
 (if (< 11 10)
   (println "X")
   (println "Y");;Y
 )
+(comment
 
+   IF NOT 10 == 11 THEN 
+      DISPLAY "A"
+   ELSE 
+      DISPLAY "B"
+)
 (if (not= 10 11)
   (println "A");;A
   (println "B")

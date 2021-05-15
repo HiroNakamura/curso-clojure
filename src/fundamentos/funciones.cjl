@@ -1,4 +1,9 @@
 (ns funciones)
+
+(comment
+   Funciones en Clojure
+)
+
 ;; Funciones
 (defn sumar[x, y]
   (+ x y)
@@ -143,8 +148,4 @@
 (println "El numero:"numero" "(residuo3? numero))
 (def numero 7)
 (println "El numero:"numero" "(residuo3? numero))
-
-
-
-
 
