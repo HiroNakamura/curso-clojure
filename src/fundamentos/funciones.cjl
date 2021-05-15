@@ -2,9 +2,20 @@
 
 (comment
    Funciones en Clojure
+
+   (defn nombreFunc [param1, param2, ... paramN]
+        operaciones
+   )
 )
 
 ;; Funciones
+
+(comment
+   FUNCTION SUMAR(X, Y){
+      RETURN X+Y;
+   }
+
+)
 (defn sumar[x, y]
   (+ x y)
 )
