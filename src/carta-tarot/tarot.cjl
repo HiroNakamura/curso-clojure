@@ -1,0 +1,10 @@
+(ns tarot)
+
+(comment
+   Carta de tarot en Clojure
+)
+
+(def dia 0)
+(def mes 0)
+(def anyo 0)
+(println "*** [Carta de Tarot] ***")

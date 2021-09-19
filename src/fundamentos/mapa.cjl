@@ -1,0 +1,6 @@
+(ns mapa)
+
+(def empleado {:nombre "Mariana" :edad 33 :salario 24000 :compania "INFORHOMEX"})
+(println "Mapa empleado: "empleado)
+(println "Nombre: "(empleado :nombre))
+(println "Edad: "(empleado :edad))
