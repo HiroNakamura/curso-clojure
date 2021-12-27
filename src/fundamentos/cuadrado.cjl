@@ -30,6 +30,12 @@
      (str "Al cuadrado es: "(cuadrado (String->Number numero)))
   )
 
- 
- (catch Exception e (str "error: " (.getMessage e)))
+
+  (catch Exception e 
+     (JOptionPane/showMessageDialog nil,
+         (str "Error: " (.getMessage e))
+    )
+  )
+
+
 )

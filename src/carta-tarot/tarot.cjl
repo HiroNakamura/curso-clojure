@@ -4,7 +4,10 @@
    Carta de tarot en Clojure
 )
 
-(def dia 0)
-(def mes 0)
-(def anyo 0)
+(def dia 18)
+(def mes 12)
+(def anyo 1981)
 (println "*** [Carta de Tarot] ***")
+(println "Dia: "dia)
+(println "Mes: "mes)
+(println "Año: "anyo)
