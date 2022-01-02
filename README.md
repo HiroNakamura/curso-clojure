@@ -20,8 +20,46 @@ java -jar clojure.jar
 ```
 Esto abrirá el REPL.
 
+```
+    user=> (def num 33)
+    user=> (println "Numero: "num);; Numero: 33
+    user=> (defn foo [x] (+ x 5))
+    user=> (foo 5);; 10
+    user=> (+ 1 2 3 4 5 6);;  21
+    user=> (doc foo);;
+    user=> (defn foo "Mi funcion Clojure" [x] (* x 5))
+    user=> (foo 4);; 20
+    user=> (doc foo)
+    user=> (doc doc)
+    user=> (doc defn)
+    user=> nil
+    user=> true
+    user=> false
+    user=> (< 2 10);; true
+    user=> (< 5 3);; false
+    user=> (= 4 5);; false
+    user=> (= 4 4);; true
+    user=> (= (+ 2 2) 4);; true
+    user=> (if (= 3 3)
+            (println "X")
+    )
+    user=> (def nombre "Fernando")
+    user=> (println "Hola, "nombre)
+    user=> (doc nombre)
+    user=> (let [x]
+             (println "X: "x)
+             (inc x)
+        )
+    user=> (let [x 3
+                 y 4]
+            (println "Suma("x","y")"(+ x y))
+        )
+    user=>
+```
+Para salir Ctrl + c
 
-**hola_mundo.cjl**
+
+**hola_mundo.clj**
 ```java
 (def saludo "Hola, mundo!!")
 (println saludo)
@@ -29,7 +67,7 @@ Esto abrirá el REPL.
 
 **Ejecutando:**
 ```
-$ java -jar hola_mundo.cjl
+$ java -jar clojure.jar hola_mundo.clj
 ```
 
 
