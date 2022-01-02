@@ -6,6 +6,18 @@
 (println "Mascota: "(:nombre my_mascota) " : "(:edad my_mascota))
 
 
+;;Clase
+(defrecord Punto [x y])
+;;Instancia
+(def my_punto
+  (Punto. 8.6 3.5)
+)
+(println "Punto("
+   (:x my_punto)":"(:y my_punto)")"
+)
+
+
+
 ;;Interface(s)
 (defprotocol IServicio
   (mostrar[this]))
@@ -34,3 +46,6 @@
 (mostrar my_x)
 (def puerta(Puerta.))
 (mostrar puerta)
+
+
+

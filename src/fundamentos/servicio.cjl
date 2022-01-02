@@ -25,5 +25,10 @@
   (def miFecha2(Fecha.  dia mes anyo))
   (verFecha miFecha2)
  
-(catch Exception e (str "ha ocurrido una excepcion: " (.getMessage e))))
+  (catch Exception e 
+     (JOptionPane/showMessageDialog nil,
+         (str "Ha ocurrido una excepcion: \n" (.getMessage e))
+    )
+  )
+)
 
