@@ -32,4 +32,8 @@
    (recur (inc i))
  )
 )
-;;;
+;;; usando let
+(let [a 3]
+  (println "a: "a)
+  (inc a)
+)

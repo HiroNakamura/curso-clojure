@@ -33,6 +33,11 @@ $ java -jar hola_mundo.cjl
 ```
 
 
+## Editores de código para Clojure
+* [Counterclockwise](https://marketplace.eclipse.org/content/counterclockwise)
+* [https://cider.mx/](https://cider.mx/)
+
+
 Links:
 * [https://clojure.org/](https://clojure.org/)
 * [https://clojuredocs.org/](https://clojuredocs.org/)
