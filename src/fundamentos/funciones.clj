@@ -16,19 +16,19 @@
    }
 
 )
-(defn sumar[x, y]
+(defn sumar "Sumar dos numeros"[x, y]
   (+ x y)
 )
 
-(defn restar[x, y]
+(defn restar "Restar dos numeros"[x, y]
   (- x y)
 )
 
-(defn multiplicar[x, y]
+(defn multiplicar "Multiplicar dos numeros"[x, y]
   (* x y)
 )
 
-(defn dividir[x, y]
+(defn dividir "Dividir dos numeros"[x, y]
   (/ x y)
 )
 
@@ -37,7 +37,7 @@
 )
 
 
-(defn factorial [n]
+(defn factorial "Factorial de un numero" [n]
   (if (= n 1)
      n
      (* n (factorial(dec n)))
@@ -64,7 +64,7 @@
   (Math/sqrt (/ p i)))
 
 
-(defn getAleatorio [vector]
+(defn getAleatorio "Numero aleatorio" [vector]
   (vector (rand-int (count vector)))
 )
 
@@ -139,8 +139,13 @@
 (println "Tasa: "tasa)
 (println "Periodo:" periodo)
 (try
-  (println "Valor futuro: "(valor_futuro presente tasa periodo))
- (catch Exception e (str "Ha ocurrido una Exception: " (.getMessage e)))
+  ;;(println "Valor futuro: "(valor_futuro presente tasa periodo))
+  (println "X:"(valor_futuro nil nil nil))
+  (catch Exception e 
+    (println (str "Ha ocurrido una Exception: " 
+      (.getMessage e)
+    ))
+  )
 )
 ;;
 (println "***********************************************")
@@ -159,4 +164,8 @@
 (println "El numero:"numero" "(residuo3? numero))
 (def numero 7)
 (println "El numero:"numero" "(residuo3? numero))
+
+
+(println "Esto es nuevo")
+
 

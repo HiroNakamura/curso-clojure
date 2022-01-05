@@ -20,7 +20,7 @@ java -jar clojure.jar
 ```
 Esto abrirá el REPL.
 
-```
+```java
     user=> (def num 33)
     user=> (println "Numero: "num);; Numero: 33
     user=> (defn foo [x] (+ x 5))
@@ -70,6 +70,28 @@ Para salir Ctrl + c
 $ java -jar clojure.jar hola_mundo.clj
 ```
 
+## Instalando Clojure en Ubuntu
+
+1. Dependencias
+```bash
+$ sudo apt-get install -y bash curl rlwrap
+```
+2. Descargar script
+```bash
+$ curl -O https://download.clojure.org/install/linux-install-1.10.2.774.sh
+```
+3. Permisos de jecución
+```bash
+$ chmod +x linux-install-1.10.2.774.sh
+```
+4. Ejecutar instalador
+```bash
+$ sudo ./linux-install-1.10.2.774.sh
+```
+5. Verificar instalación
+```bash
+$ clj
+```
 
 ## Editores de código para Clojure
 * [Counterclockwise](https://marketplace.eclipse.org/content/counterclockwise)

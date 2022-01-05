@@ -57,12 +57,28 @@
 )
 
 
+;;Null
+(defn "Metodo Mod" [x, y]
+  (println "Resultado: "(mod x y))
+)
+
+(println "Null")
+(try
+  (funcion nil nil)
+  (catch Exception e
+    (println (str "Erro: "(getMessage e)))
+    )  
+)
 
 
-
-
-
-
+;; Null y metodo inexistente
+(println "Null y metodo inexistente")
+(try
+  (funcion nil nil)
+  (catch Exception e
+    (println (str "Error: "(getMessage e)))
+    )  
+)
 
 
 

@@ -17,7 +17,7 @@ $ java -jar clojure.jar programa.cjl
 ```
 
 En Clojure puedes declarar una variable de esta forma:
-```clojure
+```java
 
 (comment
   Esto es un
@@ -60,7 +60,3 @@ Cont:  3
 user=>
 ``` 
 Para salir Ctrl + C
-
-
-
-
