@@ -93,6 +93,40 @@ $ sudo ./linux-install-1.10.2.774.sh
 $ clj
 ```
 
+
+## Instalando Leiningen con SDKMAN!
+```bash
+$ sdk install leiningen
+$ lein version
+```
+## Creando proyecto con Leiningen
+```bash
+$ lein new app proyecto
+$ cd proyecto
+$ lein run
+```
+**core.clj**
+```bash
+(ns proyecto.core
+  (:gen-class))
+
+(defn -main
+  "Esto es un comentario."
+  [& args]
+  (println "Nuestro proyecto en Leiningen"))
+```
+
+## Creando proyecto Luminus con Leiningen
+```bash
+$ lein new luminus my-app
+$ cd my-app
+$ lein run
+Started server on port 3000
+```
+Abrir navegador en http://localhost:3000/
+
+
+
 ## Editores de código para Clojure
 * [Counterclockwise](https://marketplace.eclipse.org/content/counterclockwise)
 * [https://cider.mx/](https://cider.mx/)
@@ -102,3 +136,5 @@ Links:
 * [https://clojure.org/](https://clojure.org/)
 * [https://clojuredocs.org/](https://clojuredocs.org/)
 * [https://learnxinyminutes.com/](https://learnxinyminutes.com/)
+* [https://luminusweb.com/](https://luminusweb.com/)
+* [https://leiningen.org/](https://leiningen.org/)
