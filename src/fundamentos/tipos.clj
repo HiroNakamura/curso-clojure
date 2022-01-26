@@ -1,11 +1,12 @@
 (ns tipos)
 
 (comment 
-   Tipos en Clojure:
-   Integer, String, Boolean, etc.
-
-   (def nombreVariable valor)
+   Tipos en Clojure
+   Integer, String, Boolean, etc. 
 )
+
+;; (def nombreVariable valor)
+
 (def a 1)
 (def b 2)
 (def real 45.3)
@@ -18,12 +19,21 @@
 (println "**** Tipos en Clojure ****")
 (println "a: "a)
 (println "b: "b)
+(println "Tipo a: "(type a))
+(println "Tipo b: "(type b))
 (println "real: "real)
+(println "Tipo real: "(type real))
 (println "strCad: "strCad)
+(println "Tipo strCad: "(type strCad))
 (println "arreglo: "arreglo)
+(println "Tipo arreglo: "(type arreglo))
 (println "cadena: "cadena)
+(println "Tipo cadena: "(type cadena))
 (println "verdadero: "verdadero)
+(println "Tipo verdadero: "(type verdadero))
 (println "falso: "falso)
+(println "Tipo falso: "(type falso))
+
 ;;;
 (if (= verdadero true)
     (println "Europa renacida")
@@ -75,7 +85,6 @@
 
 ;; Cadenas
 (println "Cadena:"strCad)
-(println "Tam. de la cadena:"(count strCad))
+(println "Logitud de la cadena usando count:"(count strCad))
 ;;
 (println "Suma: "(+ 1 2 3 4 5 6 7 8 9))
-
